@@ -1,4 +1,4 @@
 # VS-KC
 ## OR-VSKC Dataset
-[![Download Dataset](https://img.shields.io/badge/Download-OR--VSKC_Dataset-007ec6?style=for-the-badge&logo=download&logoColor=white)](https://your-dataset-link.zip)
-[![ZIP: 850MB](https://img.shields.io/badge/ZIP_Format-850MB-2ca02c?style=for-the-badge)]([https://...](https://drive.google.com/file/d/1i-u4gnDPH-Llx9-7eayfDvtl1I4Emx67/view?usp=sharing))
+[![Download Dataset](https://img.shields.io/badge/Download-OR--VSKC_Dataset-007ec6?style=for-the-badge&logo=download&logoColor=white)]([https://your-dataset-link.zip](https://drive.google.com/file/d/1i-u4gnDPH-Llx9-7eayfDvtl1I4Emx67/view?usp=sharing))
+
