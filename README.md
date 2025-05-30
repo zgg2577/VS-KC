@@ -14,7 +14,7 @@
 
 <p align="center">
 
-<img src="./fig/main_framework.png" width="70">
+<img src="./fig/main_framework.png">
 
 </p>
 
