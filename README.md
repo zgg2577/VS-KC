@@ -91,16 +91,13 @@ pip install -r requirements.txt
 ```
 
 ## runing
-The VS-KC implementation pipeline consists of five sequential stages: 
-1. **Image Generation**: Synthesize OR conflict scenes using Stable Diffusion 3.5 (`diffusion.py`)
-2. **Quality Filtering**: Filter generated images through Qwen-VL validation (`llm-img.py`)
-3. **Accuracy Evaluation**: Quantify baseline detection performance (`acc-llm.py`)
-4. **Dataset Construction**: Prepare formatted training data (`DatasetJson.py`)
-5. **Efficient Fine-tuning**: Apply LoRA adaptation to Qwen-VL models (`Train_lora.py`)
-```mermaid
-graph TD
-    A[Generate Images] --> B[Filter Images]
-    B --> C[Evaluate Accuracy]
-    C --> D[Construct LoRADataset]
-    D --> E[LoRA Fine-tuning]
+The implementation executes five sequential stages:  
+1. ![Generation](https://img.shields.io/badge/Stage-1_Generation-blue) `diffusion.py` - SD3.5 synthesis  
+2. ![Filtering](https://img.shields.io/badge/Stage-2_Filtering-green) `llm-img.py` - Qwen-VL validation  
+3. ![Evaluation](https://img.shields.io/badge/Stage-3_Evaluation-yellow) `acc-llm.py` - Baseline metrics  
+4. ![Construction](https://img.shields.io/badge/Stage-4_Construction-orange) `DatasetJson.py` - Data formatting  
+5. ![Fine-tuning](https://img.shields.io/badge/Stage-5_Finetuning-red) `Train_lora.py` - LoRA adaptation  
+
+**📖 Complete documentation:** [test.txt](./test.txt)  
+
 
