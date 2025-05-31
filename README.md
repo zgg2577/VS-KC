@@ -98,6 +98,6 @@ The implementation executes five sequential stages:
 4. ![Construction](https://img.shields.io/badge/Stage-4_Construction-orange) `DatasetJson.py` - Data formatting  
 5. ![Fine-tuning](https://img.shields.io/badge/Stage-5_Finetuning-red) `Train_lora.py` - LoRA adaptation  
 
-**📖 Complete documentation:** [test.txt](.VS-KC/test.txt)  
+**📖 Complete documentation:** [test.txt](./VS-KC/test.txt)  
 
 
