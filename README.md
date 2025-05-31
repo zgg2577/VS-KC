@@ -53,7 +53,9 @@ For example, as shown above, an MLLM might miss a hazardous plant in an operatin
 
 ---
 # 📑 Dataset Composition
+Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrated in figure. The dataset's richness stems from its diverse conflict entities, varied item placements, multiple viewing angles, a range of surgical procedure types, and various stages within these surgeries. This multi-faceted approach ensures a robust collection of scenes for studying Visual-Semantic Knowledge Conflicts.
 
+<img src="./fig/examples.jpg" width="600" >
 
 ## Conflict Entity Categories
 | Category | Example Entities | Risk Description |
