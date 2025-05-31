@@ -90,7 +90,7 @@ To install all dependencies:
 pip install -r requirements.txt
 ```
 
-## runing
+##🚀 Runing
 The implementation executes five sequential stages:  
 1. ![Generation](https://img.shields.io/badge/Stage-1_Generation-blue) `diffusion.py` - SD3.5 synthesis  
 2. ![Filtering](https://img.shields.io/badge/Stage-2_Filtering-green) `llm-img.py` - Qwen-VL validation  
