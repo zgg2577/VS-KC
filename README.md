@@ -42,7 +42,7 @@ This supplementary document contains comprehensive technical details including:
 
 ---
 
-## What are Visual-Semantic Knowledge Conflicts (VS-KC)?
+## ⚡ What are Visual-Semantic Knowledge Conflicts (VS-KC)?
 Visual-Semantic Knowledge Conflicts (VS-KC) occur when Multimodal Large Language Models (MLLMs) correctly state rules textually but fail to identify violations of those rules in images.
 
 
