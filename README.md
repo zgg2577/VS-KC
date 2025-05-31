@@ -1,7 +1,7 @@
 <div align="center">
   <!-- <h1><b> OR-VSKC </b></h1> -->
   <!-- <h2><b> OR-VSKC </b></h2> -->
-  <h2><b> Visual-Semantic Knowledge Conflicts in Operating Rooms: A Generative Dataset for Multimodal LLMs </b></h2>
+  <h2><b> Visual-Semantic Knowledge Conflicts in Operating Rooms: Synthetic Data Curation for Surgical Risk Perception in Multimodal Large Language Models </b></h2>
 </div>
 
 <div align="center">
