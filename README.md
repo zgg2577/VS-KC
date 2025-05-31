@@ -37,7 +37,7 @@ This supplementary document contains comprehensive technical details including:
 - **Extended Experimental Results**: Full fine-tuning performance tables (Tables 3-5) with ablation studies
 - **Technical Specifications**: Hardware configurations and parameter settings (Table 2)
 
-[![Download Appendix](https://img.shields.io/badge/Technical_Appendix-PDF-DC143C?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://drive.google.com/uc?export=download&id=1sr86NdHPDamC7_ExU5EbNd-8z_Ezaaya)
+[![Download Appendix](https://img.shields.io/badge/Technical_Appendix-PDF-DC143C?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://drive.google.com/file/d/1sr86NdHPDamC7_ExU5EbNd-8z_Ezaaya/view?usp=sharing)
 
 ---
 
