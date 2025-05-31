@@ -52,11 +52,8 @@ Visual-Semantic Knowledge Conflicts (VS-KC) occur when Multimodal Large Language
 For example, as shown above, an MLLM might miss a hazardous plant in an operating room image during a general safety check (A1), yet correctly identify the plant and its danger when asked directly (Q2 leading to A2). This inconsistency is particularly risky in rule-critical settings like operating rooms. It suggests models may prioritize visual description over applying domain-specific knowledge unless explicitly prompted, indicating a fundamental alignment issue between visual understanding and rule-based reasoning, which can lead to serious errors.
 
 ---
-## Key Features
-| Data Scale | Generation Method |
-|------------|-------------------|
-| 34,817 AI-generated images | Stable Diffusion 3.5 |
-| 214 human-annotated images | Manually screened and synthesized |
+# 📑 Dataset Composition
+
 
 ## Conflict Entity Categories
 | Category | Example Entities | Risk Description |
@@ -65,6 +62,12 @@ For example, as shown above, an MLLM might miss a hazardous plant in an operatin
 | **Inappropriate Objects & Misplaced Equipment** | `Teddy Bear`, `toy`, `balloon`, `mobile phone`, `candle`, `No Parking sign` | Cause contamination, interference or physical hazards |
 | **Inappropriate Consumables** | `bread`, `coffee`, `food`, `fruit` | Violate sterility and hygiene requirements |
 | **Unauthorized Personnel** | `chef` | Lack required qualifications for OR presence |
+
+## Key Features
+| Data Scale | Generation Method |
+|------------|-------------------|
+| 34,817 AI-generated images | Stable Diffusion 3.5 |
+| 214 human-annotated images | Manually screened and synthesized |
 
 
 
