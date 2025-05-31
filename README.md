@@ -71,5 +71,22 @@ Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrate
 | 34,817 AI-generated images | Stable Diffusion 3.5 |
 | 214 human-annotated images | Manually screened and synthesized |
 
+---
+# 💻 VS-KC code
 
+## Requirements
+The following Python packages are required to run the VS-KC detection code. We recommend using Python 3.10.13 and CUDA 12.1 for optimal compatibility:
 
+- torch==2.1.2                   
+- qwen-vl-utils==0.0.10          
+- transformers==4.51.3           
+- diffusers==0.32.2              
+- datasets==3.5.0                
+- accelerate==1.7.0             
+- peft==0.15.2                   
+
+To install all dependencies:
+```
+pip install -r requirements.txt
+```
+## Requirements
