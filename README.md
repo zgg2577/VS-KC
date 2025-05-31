@@ -74,6 +74,18 @@ Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrate
 ---
 # 💻 VS-KC code
 
+
+
+OR-VSKC/
+├── diffusion.py            # Image generation (SD3.5)
+├── llm-img.py              # Qwen-VL based filtering
+├── acc-llm.py              # Accuracy evaluation
+├── DatasetJson.py          # Dataset construction
+├── Train_lora.py           # LoRA fine-tuning
+├── output/                 # Generated images
+├── new/                    # Filtered images
+├── dataset/                # Final dataset
+└── lora_outputs/           # Fine-tuned models
 ## Requirements
 The following Python packages are required to run the VS-KC detection code. We recommend using Python 3.10.13 and CUDA 12.1 for optimal compatibility:
 
@@ -89,4 +101,4 @@ To install all dependencies:
 ```
 pip install -r requirements.txt
 ```
-## Requirements
+
