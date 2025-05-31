@@ -67,7 +67,7 @@ Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrate
 ## Key Features
 | Data Scale | Generation Method |
 |------------|-------------------|
-| 34,817 AI-generated images | Stable Diffusion 3.5 |
+| 34,817 synthetic images | Stable Diffusion 3.5 |
 | 214 human-annotated images | Manually screened and synthesized |
 
 ---
