@@ -74,18 +74,6 @@ Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrate
 ---
 # 💻 VS-KC code
 
-
-
-OR-VSKC/
-├── diffusion.py            # Image generation (SD3.5)
-├── llm-img.py              # Qwen-VL based filtering
-├── acc-llm.py              # Accuracy evaluation
-├── DatasetJson.py          # Dataset construction
-├── Train_lora.py           # LoRA fine-tuning
-├── output/                 # Generated images
-├── new/                    # Filtered images
-├── dataset/                # Final dataset
-└── lora_outputs/           # Fine-tuned models
 ## Requirements
 The following Python packages are required to run the VS-KC detection code. We recommend using Python 3.10.13 and CUDA 12.1 for optimal compatibility:
 
@@ -101,4 +89,18 @@ To install all dependencies:
 ```
 pip install -r requirements.txt
 ```
+
+## runing
+The VS-KC implementation pipeline consists of five sequential stages: 
+1. **Image Generation**: Synthesize OR conflict scenes using Stable Diffusion 3.5 (`diffusion.py`)
+2. **Quality Filtering**: Filter generated images through Qwen-VL validation (`llm-img.py`)
+3. **Accuracy Evaluation**: Quantify baseline detection performance (`acc-llm.py`)
+4. **Dataset Construction**: Prepare formatted training data (`DatasetJson.py`)
+5. **Efficient Fine-tuning**: Apply LoRA adaptation to Qwen-VL models (`Train_lora.py`)
+```mermaid
+graph TD
+    A[Generate Images] --> B[Filter Images]
+    B --> C[Evaluate Accuracy]
+    C --> D[Construct LoRADataset]
+    D --> E[LoRA Fine-tuning]
 
