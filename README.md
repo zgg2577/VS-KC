@@ -25,7 +25,7 @@
 
   
 ## 🗂 OR-VSKC Dataset Download
-[![Download OR-VSKC Dataset](https://img.shields.io/badge/Download-OR--VSKC_Dataset-007ec6?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1KPhaGlMFR7LFjINfioOQTld5Xfg-v6Rz/view?usp=sharing) 
+[![Download OR-VSKC Dataset](https://img.shields.io/badge/Download-OR--VSKC_Dataset-007ec6?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/uc?export=download&id=1KPhaGlMFR7LFjINfioOQTld5Xfg-v6Rz)
 
 
 ---
