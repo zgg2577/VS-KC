@@ -1,7 +1,7 @@
 <div align="center">
   <!-- <h1><b> OR-VSKC </b></h1> -->
   <!-- <h2><b> OR-VSKC </b></h2> -->
-  <h2><b> Visual-Semantic Knowledge Conflicts in Operating Rooms: Synthetic Data Curation for Surgical Risk Perception in Multimodal Large Language Models </b></h2>
+  <h2><b> Resolving Visual-Semantic Knowledge Conflicts in Operating Rooms via Synthetic Data Guided Alignment for Surgical Risk Perception in Multimodal Large Language Models </b></h2>
 </div>
 
 <div align="center">
@@ -20,24 +20,6 @@
 
 > 🌟 Please let us know if you find out a mistake or have any suggestions!
 
----
-
-
-  
-## 🗂 OR-VSKC Dataset Download
-[![Download OR-VSKC Dataset](https://img.shields.io/badge/Download-Google_Drive-007ec6?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1M0HaGWutexEuZh4n7uaUnhaVCuSNr4E2/view?usp=drive_link)
-
-
----
-
-## 📑 Appendix: Extended Documentation
-
-This supplementary document contains comprehensive technical details including:
-- **Dataset Construction Methodology**: Conflict entity definitions, Stable Diffusion generation parameters (Table 1), and human annotation protocols
-- **Extended Experimental Results**: Full fine-tuning performance tables (Tables 3-5) with ablation studies
-- **Technical Specifications**: Hardware configurations and parameter settings (Table 2)
-
-[![Download Appendix](https://img.shields.io/badge/Technical_Appendix-PDF-DC143C?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://drive.google.com/file/d/1KPhaGlMFR7LFjINfioOQTld5Xfg-v6Rz/view?usp=drive_link)
 
 ---
 
@@ -56,19 +38,24 @@ Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrate
 
 <img src="./fig/examples.jpg" width="600" >
 
+<img src="./fig/examples.jpg" width="600" >
+
 ## Conflict Entity Categories
-| Category | Example Entities | Risk Description |
-|----------|------------------|------------------|
-| **Biological Contaminants** | `ant`, `butterfly`, `insect`, `cat`, `dog`, `small animal`, `plant` | Introduce infectious agents or undermine sterile field |
-| **Inappropriate Objects & Misplaced Equipment** | `Teddy Bear`, `toy`, `balloon`, `mobile phone`, `candle`, `No Parking sign` | Cause contamination, interference or physical hazards |
-| **Inappropriate Consumables** | `bread`, `coffee`, `food`, `fruit` | Violate sterility and hygiene requirements |
-| **Unauthorized Personnel** | `chef` | Lack required qualifications for OR presence |
+
+The dataset categorizes visual-semantic conflicts into three hierarchical levels based on semantic plausibility and occurrence frequency:
+
+| Category | Example Entities | Context & Risk Description |
+| :--- | :--- | :--- |
+| **Common Mistakes**<br>*(High-Frequency Violations)* | `mobile phone`, `bread`, `coffee`, `fruit`, `food` | **Everyday Negligence:** Items strictly prohibited but plausibly introduced due to human error. Poses subtle but significant sterility and hygiene risks. |
+| **Occasional Mistakes**<br>*(Environmental Breaches)* | `ant`, `butterfly`, `cat`, `dog`, `insect`, `small animal`, `plant`, `candle` | **Environmental Control Lapses:** Rare but severe breaches involving biological contaminants (flora/fauna) or fire hazards. Represents "out-of-context" living threats to the sterile field. |
+| **Unreasonable Conflicts**<br>*(Semantic Absurdities)* | `chef`, `balloon`, `Teddy Bear`, `toy`, `No Parking sign` | **Logical Impossibilities:** Entities that defy the fundamental logic of a surgical suite. Used to stress-test the model's world knowledge and resistance to hallucinations. |
 
 ## Key Features
-| Data Scale | Generation Method |
-|------------|-------------------|
-| 34,817 synthetic images | Stable Diffusion 3.5 |
-| 214 human-annotated images | Manually screened and synthesized |
+
+| Dataset Component | Data Scale | Generation & Annotation Method |
+| :--- | :--- | :--- |
+| **Synthetic Set** | **26,992** images | Diffusion-based inpainting on 4D-OR frames + Ensemble Verification |
+| **Validation Set** | **509** images | Expert-annotated by medical professionals |
 
 ---
 # 💻 VS-KC code
