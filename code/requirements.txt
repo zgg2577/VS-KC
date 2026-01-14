@@ -1,0 +1,10 @@
+# Python 3.10.13 (Informational - Python version is usually managed separately or checked in code)
+# CUDA 12.1 (Informational - Ensure your environment has a compatible CUDA version for PyTorch)
+
+torch==2.1.2
+qwen-vl-utils==0.0.10
+transformers==4.51.3
+diffusers==0.32.2
+datasets==3.5.0
+accelerate==1.7.0
+peft==0.15.2
