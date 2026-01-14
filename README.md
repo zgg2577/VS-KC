@@ -38,7 +38,7 @@ Our OR-VSKC dataset offers comprehensive operating room scenarios, as illustrate
 
 <img src="./fig/examples.jpg" width="600" >
 
-<img src="./fig/dataset.jpg" width="600" >
+<img src="./fig/dataset.png" width="600" >
 
 ## Conflict Entity Categories
 
