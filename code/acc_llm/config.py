@@ -25,10 +25,7 @@ class Config:
     # 本地模型生成参数配置
     GENERATION_CONFIG = {
         "max_new_tokens": 512,
-        "temperature": 0.7,
-        "top_p": 0.9,
-        "do_sample": True,
-        "repetition_penalty": 1.1,
+        "do_sample":False ,
     }
 
     # 图像处理
@@ -56,3 +53,4 @@ class Config:
 
     # 支持的图片格式
     VALID_IMG_EXTS = (".jpg", ".jpeg", ".png", ".bmp", ".webp")
+
