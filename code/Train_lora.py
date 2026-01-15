@@ -430,7 +430,7 @@ def main():
         "--lr", type=float, default=1e-4, help="Learning rate (for 'all' mode)"
     )
     parser.add_argument(
-        "--epochs", type=int, default=5, help="Number of epochs (for 'all' mode)"
+        "--epochs", type=int, default=1, help="Number of epochs (for 'all' mode)"
     )
     parser.add_argument("--batch_size", type=int, default=4, help="Batch size")
     parser.add_argument("--debug", action="store_true", help="Enable debug mode")
