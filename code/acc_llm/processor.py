@@ -92,14 +92,14 @@ class SafetyProcessor:
         模式1: prefix_entity (例如: 2_1_1_plant -> plant)
         模式2: entity (例如: plant, No Parking sign)
         """
-        parts = folder_name.split('_')
+        parts = folder_name.split("_")
         if len(parts) > 1:
             # 如果有下划线，取最后一部分
             potential_entity = parts[-1]
             # 检查最后一部分是否主要由字母组成 (允许空格，例如 "No Parking sign")
             # 如果最后一部分是纯数字，或者过于简短且不是一个词，可能不是我们想要的实体名
             # 这里用一个简单的判断：如果它包含字母，我们就认为它是实体
-            if re.search(r'[a-zA-Z]', potential_entity):
+            if re.search(r"[a-zA-Z]", potential_entity):
                 return potential_entity
 
         # 如果没有下划线，或者按 _ 分割的最后一部分不符合实体特征 (例如纯数字)
@@ -244,11 +244,21 @@ class SafetyProcessor:
     def _process_folder(self, folder: Path, entity: str) -> dict:
         """Process all images in a folder with complete dialogue logging"""
         results = []
-        # Use glob and sort to ensure consistent order
-        image_files = sorted([f for f in folder.glob("*.jpg") if f.is_file()])
+
+        # 定义支持的后缀名 (同时包含 jpg 和 png，不区分大小写)
+        valid_extensions = {".jpg", ".jpeg", ".png"}
+
+        # 使用 iterdir 遍历并筛选后缀，最后排序以保持顺序一致
+        image_files = sorted(
+            [
+                f
+                for f in folder.iterdir()
+                if f.is_file() and f.suffix.lower() in valid_extensions
+            ]
+        )
 
         if not image_files:
-            print(f"⚠️ No JPG images found in {folder.name}")
+            print(f"⚠️ No supported images (jpg/png) found in {folder.name}")
             return {
                 "metadata": {
                     "folder": folder.name,
@@ -260,12 +270,13 @@ class SafetyProcessor:
             }
 
         for img_file in image_files:
-            print(f"  Processing {img_file.name}...")
+            print(f"  Processing {img_file.name}...")
             result = {
                 "image": img_file.name,
                 **self.process_image(str(img_file), entity),
             }
             results.append(result)
+
         return {
             "metadata": {
                 "folder": folder.name,
