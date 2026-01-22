@@ -58,6 +58,11 @@ The dataset categorizes visual-semantic conflicts into three hierarchical levels
 | **Validation Set** | **509** images | Expert-annotated by medical professionals |
 
 ---
+
+## 🗂 OR-VSKC Dataset Download
+[![Download OR-VSKC Dataset](https://img.shields.io/badge/Download-Google_Drive-007ec6?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/158GzoJFn02VzsE6ar0vKmBB8m-fennOB/view?usp=drive_link)
+
+---
 # 💻 VS-KC code
 
 ## Requirements
