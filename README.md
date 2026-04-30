@@ -102,6 +102,29 @@ A candidate sample was retained only if it received approval from at least four 
 
 
 ---
+# 🔍 Interpretability Analysis
+
+To better understand how fine-tuning mitigates Visual-Semantic Knowledge Conflicts (VS-KC), we provide an occlusion-sensitivity visualization comparing the base model and the fine-tuned model under two different prompting settings.
+
+<p align="center">
+<img src="./fig/CAM.png" width="900" >
+</p>
+
+The visualization compares model grounding behavior across three representative operating-room scenes. The first column shows the original synthetic images, where red boxes indicate the ground-truth conflict entities. The following columns show occlusion-sensitivity heatmaps under two tasks:
+
+- **Task 1: Entity Recognition**  
+  The model is explicitly asked whether the image contains the target entity, such as `coffee` or `mobile phone`.
+
+- **Task 2: Safety Hazard Perception**  
+  The model receives an open-ended safety-scanning prompt and must determine whether unsafe or unreasonable factors are present.
+
+Under the explicit entity-recognition prompt, both the base model and the fine-tuned model can localize the target objects, indicating that the base model already possesses the perceptual capability to detect these visually salient foreign entities.
+
+However, under the open-ended safety-scanning prompt, the base model exhibits scattered or background-focused activation, suggesting that it fails to connect the detected object with the corresponding operating-room safety rule. In contrast, the fine-tuned model concentrates its activation on the violating entity itself, showing that OR-VSKC fine-tuning strengthens the linkage between visual evidence and protocol-grounded safety reasoning.
+
+This result supports the core claim of OR-VSKC: many VS-KC failures are not caused by pure object-recognition failure, but by a missing connection between visual perception and safety-rule activation.
+
+---
 
 # 🗂 OR-VSKC Dataset Download
 
