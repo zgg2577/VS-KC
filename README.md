@@ -16,7 +16,9 @@
 
 </p>
 
+<div > <b>>🎉 Our work has been accepted by IEEE Transactions on Multimedia (TMM)!</b> </div>
 > 🌟 Please let us know if you find any mistakes or have any suggestions!
+
 
 ---
 
